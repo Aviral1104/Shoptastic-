@@ -13,7 +13,7 @@ const CartPage = ({ cart, removeFromCart }) => {
         <>
           {cart.map((item) => (
             <div key={item.id} className="flex justify-between items-center mb-4 bg-gray-100 p-3 rounded">
-              <span className="text-gray-800">{item.name} - ${item.price.toFixed(2)}</span>
+              <span className="text-gray-800">{item.name} - ₹{item.price.toFixed(2)}</span>
               <button 
                 onClick={() => removeFromCart(item)}
                 className="btn btn-secondary text-sm"
@@ -23,7 +23,7 @@ const CartPage = ({ cart, removeFromCart }) => {
             </div>
           ))}
           <div className="font-bold mt-4 text-xl text-purple-600">
-            Total: ${total.toFixed(2)}
+            Total: ₹{total.toFixed(2)}
           </div>
           <button className="btn btn-primary w-full mt-6">
             Proceed to Checkout
