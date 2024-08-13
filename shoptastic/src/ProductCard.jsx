@@ -9,7 +9,7 @@ const ProductCard = ({ product, addToCart }) => (
         <h3 className="text-2xl font-bold mb-2 text-gray-800">{product.name}</h3>
         <p className="text-gray-600 mb-4">{product.description}</p>
         <div className="flex justify-between items-center mb-4">
-          <span className="text-lg font-semibold text-green-500">${product.price.toFixed(2)}</span>
+          <span className="text-lg font-semibold text-green-500">₹{product.price.toFixed(2)}</span>
           <button 
             onClick={() => addToCart(product)}
             className="bg-gradient-to-r from-cyan-500 to-pink-500 text-white px-4 py-2 rounded-lg shadow-md hover:shadow-xl transform hover:scale-105 transition-transform duration-200"
