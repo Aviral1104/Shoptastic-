@@ -13,6 +13,7 @@ const products = [
   { id: 4, name: 'Smartwatch', price: 19999, description: 'Fitness tracking smartwatch', image: '/Smartwatch.jpeg' },
   { id: 5, name: 'Tablet', price: 29999, description: 'Lightweight and powerful tablet', image: '/Tablet.jpeg' },
   { id: 6, name: 'Camera', price: 59999, description: 'Professional DSLR camera', image: '/Camera.jpeg' },
+  { id: 7, name: 'Monitor', price: 25999, description: 'High Resolution 144 Hz responsive display', image: '/Camera.jpeg' },
 ];
 
 const App = () => {
